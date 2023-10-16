@@ -85,6 +85,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   Visibility(
                     visible: _personType == PersonType.student,
                     child: TextFormField(
+                      controller: registerNumberController,
                       validator: (value) {
                         if (_personType == PersonType.teacher) {
                           return null;
